@@ -25,3 +25,8 @@ def Choose_option() :
            print("Try Again")
            Choose_option()
      return user_choice
+     
+     //Python code in one module gains access to the code in another module by the process of importing it.
+     //In this code I have used import random.
+//Random module implements pseudo-random number generators for various distributions.
+
