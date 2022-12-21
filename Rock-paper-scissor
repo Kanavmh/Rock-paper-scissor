@@ -1,0 +1,27 @@
+import random
+computer_wins=o
+player_wins=0
+print("Winning rules of the game are as follows: \n"
+        +"Rock v/s Paper ----> Paper Wins \n"
+        +"Rock v/s Scissor ----> Rock Wins \n"
+        +"Scissor v/s Paper ----> Scissor Wins \n")
+        
+print("For Rock, you can enter :: Rock,rock,r,R \n
+       For Paper, you can enter :: Paper,paper,p,P \n
+       For Scissor, you can enter :: Scissor,scissor,s,S \n ")
+       
+def Choose_option() :
+     user_choice=input("Please enter Rock,Paper or Scissor : ")
+     if user_choice in ["Rock","rock","r","R"] :
+     user_choice = "r"
+     
+     elif user_choice in ["Paper","paper","p","P"] :
+     user_choice = "p"
+     
+     elif user_choice in ["Scissor","scissor","s","S"] :
+     user_choice = "s"
+     
+     else :
+           print("Try Again")
+           Choose_option()
+     return user_choice
